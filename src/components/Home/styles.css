@@ -1,0 +1,8 @@
+.homeContainer {
+  composes: centeredContainer from 'styles/sharedStyles.css';
+  margin-top: 10px;
+}
+
+.pageTitle {
+  font-size: 30px;
+}
