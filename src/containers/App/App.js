@@ -5,6 +5,7 @@ import { Route, NavLink } from 'react-router-dom'
 export default function App(props) {
   return (
     <div>
+    <div>
       <nav>
         <NavLink to='/'><button>{'Home'}</button></NavLink>
         <NavLink to='/about'><button>{'About'}</button></NavLink>
@@ -13,6 +14,7 @@ export default function App(props) {
         <Route exact path='/' component={HomeContainer} />
         <Route path='/about' component={AboutContainer} />
       </main>
+    </div>
     </div>
   )
 }
