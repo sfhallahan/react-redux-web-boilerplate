@@ -21,17 +21,10 @@ shell.rm('-rf', 'src/containers/*');
 shell.cp('-R', 'config/templates/containers/*', 'src/containers');
 
 // Cleanup reducers
-shell.rm('-rf', 'src/redux');
+shell.rm('-rf', 'src/redux/*');
 shell.cp('-R', 'config/templates/redux/*', 'src/redux');
 
 // Remove the templates folder
 shell.rm('-rf', 'config/templates');
 
-/**
-// Commit the changes
-if (shell.exec('git add . --all && git commit -qm "Remove default example"').code !== 0) {
-  shell.echo('\nError: Git commit failed');
-  shell.exit(1);
-}
-*/
-shell.echo('\nCleanup done. Happy Coding!!!');
+shell.echo('\nCleanup done. \nTo start with a fresh git repository delete the .git folder in the root directory and run git init. \nHappy Coding!!!');

@@ -6,9 +6,14 @@ This is the boilerplate set up I use to jump start my react web applications. Mo
 * Redux thunk
 * React Router (v4)
 * CSS modules
+* Jest/enzyme for testing
 
 ## Demo
 I've provided a simple sample app with two pages. The redux store is configured to include the route history and a single reducer that toggles a boolean on the homepage. You can view how the CSS modules are used by looking at `src/components/Home/styles.js`.
+To run the demo app:
+1. Clone the repository
+2. Install dependencies `npm install`
+3. Run the clean script `npm run start`
 
 # Setup
 To use this boilerplate
@@ -16,3 +21,4 @@ To use this boilerplate
 2. Install dependencies `npm install`
 3. Run the clean script `npm run clean`
     * This script removes all the demo app files while maintaining the file structure and configuration
+4. To start with a fresh git repository, delete the `.git` folder in the root directory, rename the project folder to whatever you're working on and run `git init`
