@@ -17,12 +17,12 @@ shell.rm('-rf', 'src/components/*');
 shell.cp('config/templates/index.js', 'src/components')
 
 // Cleanup containers/
-shell.rm('-rf', 'src/containers');
-shell.cp('config/templates/containers/*', 'src/containers');
+shell.rm('-rf', 'src/containers/*');
+shell.cp('-R', 'config/templates/containers/*', 'src/containers');
 
 // Cleanup reducers
 shell.rm('-rf', 'src/redux');
-shell.cp('config/templates/redux/*', 'src/redux');
+shell.cp('-R', 'config/templates/redux/*', 'src/redux');
 
 // Remove the templates folder
 shell.rm('-rf', 'config/templates');
